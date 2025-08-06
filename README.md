@@ -34,3 +34,10 @@ This project models a hospital information system using ontology concepts in Pro
 - Protégé OWL Editor
 - RDF/XML Format
 - JSON for instance data
+
+
+## 📄 Project Documentation
+
+Download the full project report with ontology details, design, and use cases:
+
+👉 [documentation.docx](./documentation.docx)
