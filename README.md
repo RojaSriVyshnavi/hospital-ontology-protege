@@ -1,3 +1,14 @@
+
+## 🔍 Explore Ontology Live (WebVOWL)
+
+1. Download the RDF file below
+2. Visit [WebVOWL Viewer](http://www.visualdataweb.de/webvowl/)
+3. Upload `Hospitalsystem.rdf` to see interactive graphs
+
+📄 [Download RDF](./Hospitalsystem.rdf)
+
+
+
 # Hospital System Ontology – Protégé Project 🏥
 
 This project models a hospital information system using ontology concepts in Protégé. It defines entities such as patients, doctors, treatments, diagnoses, and their relationships.
