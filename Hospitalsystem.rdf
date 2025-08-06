@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13/"
+     xml:base="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-13="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#admittedto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#admittedto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward"/>
+        <rdfs:comment>Links a patient to the hospital ward where they are admitted.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#assignedto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#assignedto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor"/>
+        <rdfs:comment>Indicates which doctor is responsible for a patient.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#diagnosedwith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#diagnosedwith">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Disease"/>
+        <rdfs:comment>Connects a patient to a disease they have been diagnosed with.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasappointment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasappointment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appointment"/>
+        <rdfs:comment>Connects a patient to their scheduled appointment.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasmedicalrecord -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasmedicalrecord">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medicalrecord"/>
+        <rdfs:comment>Associates a patient with their medical record.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#prescribedmedication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#prescribedmedication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medication"/>
+        <rdfs:comment>Links a doctor to a medication they have prescribed.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#undergoestreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#undergoestreatment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <rdfs:comment>Links a patient to the treatment they are undergoing</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#worksin -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#worksin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Nurse"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Treatment"/>
+        <rdfs:comment>Specifies the department where a doctor or nurse works.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Represents the age of a person in years.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasdate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Indicates the date and time of an appointment.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasgender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasgender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Stores gender/sex of the person</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasid -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasid">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Unique identifier code for each patient.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Represents the full name of a person.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasphonenumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#hasphonenumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>stores the person Contact information</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appointment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appointment">
+        <rdfs:comment>A scheduled interaction between a patient and a healthcare provider for examination or treatment.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Department">
+        <rdfs:comment>A functional division within the hospital that handles specific types of healthcare services, such as cardiology or radiology.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Disease">
+        <rdfs:comment>A medical condition that negatively affects the normal function of a patient&apos;s body or mind.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:comment>A licensed medical professional responsible for diagnosing, treating, and managing patient care.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medicalrecord -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medicalrecord">
+        <rdfs:comment>A documented history of a patient&apos;s medical conditions, treatments, test results, and clinical observations.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medication">
+        <rdfs:comment>A pharmaceutical drug prescribed to a patient to treat or manage a medical condition.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:comment>A trained healthcare professional who supports doctors in treating patients and managing daily clinical tasks.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person"/>
+        <rdfs:comment>An individual who receives medical treatment or care within the hospital.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Person">
+        <rdfs:comment>A general class representing any human individual in the hospital system, including patients, doctors, and nurses.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Treatment">
+        <rdfs:comment>A medical procedure, therapy, or medication administered to cure or manage a disease.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward">
+        <rdfs:comment>A physical area or room in the hospital where patients are admitted and monitored.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Alex_Khan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Alex_Khan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <untitled-ontology-13:admittedto rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_C3"/>
+        <untitled-ontology-13:assignedto rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Brown"/>
+        <untitled-ontology-13:diagnosedwith rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#stroke"/>
+        <untitled-ontology-13:hasappointment rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_003"/>
+        <untitled-ontology-13:prescribedmedication rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Clopidogrel"/>
+        <untitled-ontology-13:undergoestreatment rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Rehabilitationtherapy"/>
+        <untitled-ontology-13:hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">52</untitled-ontology-13:hasage>
+        <untitled-ontology-13:hasdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-10T11:15:00</untitled-ontology-13:hasdate>
+        <untitled-ontology-13:hasgender>Male</untitled-ontology-13:hasgender>
+        <untitled-ontology-13:hasid>P123</untitled-ontology-13:hasid>
+        <untitled-ontology-13:hasname>Alex Khan</untitled-ontology-13:hasname>
+        <untitled-ontology-13:hasphonenumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5735550099</untitled-ontology-13:hasphonenumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Amlodipine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Amlodipine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appointment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appointment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appointment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Cardiacmonitoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Cardiacmonitoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#CardiologyDept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#CardiologyDept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Clopidogrel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Clopidogrel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Cognitivetherapy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Cognitivetherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Brown -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Brown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor"/>
+        <untitled-ontology-13:worksin rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#EmergencyDept"/>
+        <untitled-ontology-13:hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">41</untitled-ontology-13:hasage>
+        <untitled-ontology-13:hasgender>Female</untitled-ontology-13:hasgender>
+        <untitled-ontology-13:hasname>Dr.Emily Brown</untitled-ontology-13:hasname>
+        <untitled-ontology-13:hasphonenumber>5735557766</untitled-ontology-13:hasphonenumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Miller -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Miller">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor"/>
+        <untitled-ontology-13:worksin rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#NeurologyDept"/>
+        <untitled-ontology-13:hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</untitled-ontology-13:hasage>
+        <untitled-ontology-13:hasgender>Female</untitled-ontology-13:hasgender>
+        <untitled-ontology-13:hasname>Dr.Lisa Miller</untitled-ontology-13:hasname>
+        <untitled-ontology-13:hasphonenumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5735557788</untitled-ontology-13:hasphonenumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Smith -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Smith">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Doctor"/>
+        <untitled-ontology-13:worksin rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#CardiologyDept"/>
+        <untitled-ontology-13:hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</untitled-ontology-13:hasage>
+        <untitled-ontology-13:hasgender>&quot;Male&quot;</untitled-ontology-13:hasgender>
+        <untitled-ontology-13:hasname>&quot;Dr.John Smith&quot;</untitled-ontology-13:hasname>
+        <untitled-ontology-13:hasphonenumber>&quot;5735557890&quot;</untitled-ontology-13:hasphonenumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#EmergencyDept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#EmergencyDept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Hypertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Hypertension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ibuprofen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ibuprofen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Medication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Jane_Doe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Jane_Doe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <untitled-ontology-13:admittedto rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_B2"/>
+        <untitled-ontology-13:assignedto rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Miller"/>
+        <untitled-ontology-13:diagnosedwith rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Migrane"/>
+        <untitled-ontology-13:hasappointment rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_002"/>
+        <untitled-ontology-13:prescribedmedication rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ibuprofen"/>
+        <untitled-ontology-13:undergoestreatment rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Cognitivetherapy"/>
+        <untitled-ontology-13:hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">27</untitled-ontology-13:hasage>
+        <untitled-ontology-13:hasdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-03T09:30:00</untitled-ontology-13:hasdate>
+        <untitled-ontology-13:hasgender>Female</untitled-ontology-13:hasgender>
+        <untitled-ontology-13:hasid>P122</untitled-ontology-13:hasid>
+        <untitled-ontology-13:hasname>Jane Doe</untitled-ontology-13:hasname>
+        <untitled-ontology-13:hasphonenumber>5735554321</untitled-ontology-13:hasphonenumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#John_Doe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#John_Doe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Patient"/>
+        <untitled-ontology-13:admittedto rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_A1"/>
+        <untitled-ontology-13:assignedto rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Dr_Smith"/>
+        <untitled-ontology-13:diagnosedwith rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Hypertension"/>
+        <untitled-ontology-13:hasappointment rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Appt_001"/>
+        <untitled-ontology-13:prescribedmedication rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Amlodipine"/>
+        <untitled-ontology-13:undergoestreatment rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Cardiacmonitoring"/>
+        <untitled-ontology-13:hasage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-13:hasage>
+        <untitled-ontology-13:hasdate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2025-06-01T10:00:00Z</untitled-ontology-13:hasdate>
+        <untitled-ontology-13:hasgender>Male</untitled-ontology-13:hasgender>
+        <untitled-ontology-13:hasid>P121</untitled-ontology-13:hasid>
+        <untitled-ontology-13:hasname>John Doe</untitled-ontology-13:hasname>
+        <untitled-ontology-13:hasphonenumber rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5735551234</untitled-ontology-13:hasphonenumber>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Migrane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Migrane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#NeurologyDept -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#NeurologyDept">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Department"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Rehabilitationtherapy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Rehabilitationtherapy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Treatment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_A1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_A1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_B2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_B2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_C3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward_C3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Ward"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#stroke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#stroke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/vyshu/ontologies/2025/4/untitled-ontology-13#Disease"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,61 @@
+{
+  "individuals": [
+    {
+      "id": "John_Doe",
+      "class": "Patient",
+      "dataProperties": {
+        "hasName": "John Doe",
+        "hasAge": 30,
+        "hasGender": "Male",
+        "hasID": "P121",
+        "hasPhoneNumber": "5735551234"
+      },
+      "objectProperties": {
+        "assignedTo": "Dr_Smith",
+        "admittedTo": "Ward_A1",
+        "hasAppointment": "Appt_001",
+        "diagnosedWith": "Hypertension",
+        "prescribedMedication": "Amlodipine",
+        "undergoesTreatment": "CardiacMonitoring"
+      }
+    },
+    {
+      "id": "Jane_Doe",
+      "class": "Patient",
+      "dataProperties": {
+        "hasName": "Jane Doe",
+        "hasAge": 27,
+        "hasGender": "Female",
+        "hasID": "P122",
+        "hasPhoneNumber": "5735554321"
+      },
+      "objectProperties": {
+        "assignedTo": "Dr_Miller",
+        "admittedTo": "Ward_B2",
+        "hasAppointment": "Appt_002",
+        "diagnosedWith": "Migraine",
+        "prescribedMedication": "Ibuprofen",
+        "undergoesTreatment": "CognitiveTherapy"
+      }
+    },
+    {
+      "id": "Alex_Khan",
+      "class": "Patient",
+      "dataProperties": {
+        "hasName": "Alex Khan",
+        "hasAge": 52,
+        "hasGender": "Male",
+        "hasID": "P123",
+        "hasPhoneNumber": "5735550099"
+      },
+      "objectProperties": {
+        "assignedTo": "Dr_Brown",
+        "admittedTo": "Ward_C3",
+        "hasAppointment": "Appt_003",
+        "diagnosedWith": "Stroke",
+        "prescribedMedication": "Clopidogrel",
+        "undergoesTreatment": "RehabilitationTherapy"
+      }
+    }
+  ]
+}
